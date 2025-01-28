@@ -1,35 +1,35 @@
-// import { nameIsValid } from "../app"
+import { nameIsValid } from "../app"
 
 import { fullTrim, getTotal } from "../app"
 
-// describe('nameIsValid',()=>{
-//     it('amountSymbol',()=>{
-//         expect(nameIsValid("ivan")).toBe(true)
-//         expect(nameIsValid("m")).toBe(false)
-//     })
-//     it('typeName',()=>{
-//         expect(nameIsValid('ivan')).toBe(true)
-//         expect(nameIsValid(2)).toBe(false)
-//     })
-//     it('testFun',()=>{
-//         expect(nameIsValid('ivan')).toBe(true)
-//         expect(nameIsValid('Иван')).toBe(false)
-//         expect(nameIsValid('Ivan')).toBe(false)
-//     })
-// })
+describe('nameIsValid',()=>{
+    it('amountSymbol',()=>{
+        expect(nameIsValid("ivan")).toBe(true)
+        expect(nameIsValid("m")).toBe(false)
+    })
+    it('typeName',()=>{
+        expect(nameIsValid('ivan')).toBe(true)
+        expect(nameIsValid(2)).toBe(false)
+    })
+    it('testFun',()=>{
+        expect(nameIsValid('ivan')).toBe(true)
+        expect(nameIsValid('Иван')).toBe(false)
+        expect(nameIsValid('Ivan')).toBe(false)
+    })
+})
 
-// describe('fullTrim',()=>{
-//     it('deleteSpace',()=>{
-//         expect(fullTrim("i van")).toBe('ivan')
-//         expect(fullTrim("ivan")).toBe('ivan')
-//     })
-// })
+describe('fullTrim',()=>{
+    it('deleteSpace',()=>{
+        expect(fullTrim("i van")).toBe('ivan')
+        expect(fullTrim("ivan")).toBe('ivan')
+    })
+})
 
-// describe('getTotal',()=>{
-//     it('getSum',()=>{
-//         expect(()=>getTotal([{quantity: 10, price:10}],'number')).toThrowError('Скидка должна быть числом')
-//     })
-// })
+describe('getTotal',()=>{
+    it('getSum',()=>{
+        expect(()=>getTotal([{quantity: 10, price:10}],'number')).toThrowError('Скидка должна быть числом')
+    })
+})
 
 describe('getTotal', () =>{
     it.each([
