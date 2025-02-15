@@ -7,7 +7,7 @@
         "start": "node src/main.js",
         "lint:ci": "eslint .",
         "lint": "eslint . --fix",
-        "testforlib": "jest"
+        "test": "jest"
     },
     "author": "Damir Rysaev <freepad@ya.ru>",
     "keywords": [],
